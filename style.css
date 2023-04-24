@@ -73,7 +73,7 @@ button {
   list-style: none;
 }
 
-.button {
+.form__button {
   background: none;
   border: 0px;
   color: #888;
@@ -83,7 +83,7 @@ button {
   cursor: pointer;
 }
 
-.button:hover {
+.form__button:hover {
   color: #3a3a3a;
 }
 
@@ -153,13 +153,13 @@ button {
   width: 226px;
 }
 
-.button--delete img {
+.form__button--delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button--delete img:hover {
+.form__button--delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -170,7 +170,7 @@ button {
 }
 
 /* Edit Task */
-.form__task--hidden {
+.form__item .form__task {
   display: none;
 }
 
