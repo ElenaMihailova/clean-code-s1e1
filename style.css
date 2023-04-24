@@ -153,6 +153,7 @@ button {
   width: 226px;
 }
 
+/* Теговый селектор img используется для простоты смены иконки. */
 .form__button--delete img {
   height: 2em;
   transform: rotateZ(45deg);
