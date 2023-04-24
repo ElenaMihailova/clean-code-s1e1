@@ -2,25 +2,26 @@
 <html lang="en">
 
 <head>
-  <!-- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen">
 </head>
 
 <body>
-  <div class="banner">
-    <img class="banner__image"  src="./eisenhower-matrix.jpg">
-    <a class="banner__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
+  <header class="header">
+    <img class="header__image" src="./eisenhower-matrix.jpg" alt="Promotional picture of the app">
+    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
 
-  <div class="form">
+
+  <main class="form">
     <h1 class="visually-hidden">App TODO-list</h1>
 
-    <div class="form__element" id="topSectionForAddingElementToList">
-        <h2 class="form__title" for="new-task">Add Item</h2>
+    <div class="form__element">
+      <h2 class="form__title">Add Item</h2>
       <div class="form__wrapper">
         <input id="new-task" class="form__task" type="text">
         <button class="form__button button">Add</button>
@@ -36,7 +37,7 @@
           <input class="form__task form__task--hidden" type="text">
           <button class="form__button button button--edit">Edit</button>
           <button class="form__button button button--delete">
-            <img src="./remove.svg">
+            <img src="./remove.svg" alt="Delete a position">
           </button>
         </li>
         <li class="form__item form__item--edit">
@@ -45,7 +46,7 @@
           <input class="form__task" type="text" value="Go Shopping">
           <button class="form__button button button--edit">Save</button>
           <button class="form__button button button--delete">
-            <img src="./remove.svg">
+            <img src="./remove.svg" alt="Delete a position">
           </button>
         </li>
       </ul>
@@ -53,20 +54,20 @@
 
     <div class="form__element">
       <h2 class="form__title">Completed</h2>
-      <ul class="form__list"  id="completed-tasks">
+      <ul class="form__list" id="completed-tasks">
         <li class="form__item">
           <input class="form__checkbox" type="checkbox" checked>
           <label class="form__text">See the Doctor</label>
           <input class="form__task form__task--hidden" type="text">
           <button class="form__button button button--edit">Edit</button>
           <button class="form__button button button--delete">
-            <img src="./remove.svg">
+            <img src="./remove.svg" alt="Delete a position">
           </button>
         </li>
       </ul>
     </div>
 
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 
